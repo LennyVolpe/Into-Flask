@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+{% block title %}Registered Users{% endblock %}
+
+{% block content %}
+  <div class="mydiv">
+    <h1>Registered Users</h1>
+    <ol id="sutdents">
+      {% for name, event in students.items() %}
+        <li>{{ name }} - {{ event }}</li>
+        <br>
+      {% endfor %}
+    </ol>
+  </div>
+{% endblock %}
