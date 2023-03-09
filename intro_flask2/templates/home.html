@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Calculate</h1>
+    <form action="{{ url_for('even') }}" method="get">
+        <label for="num">Enter an integer:</label>
+        <input type="text" id="num" name="num">
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
